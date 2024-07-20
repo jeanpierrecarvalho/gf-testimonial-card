@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-gradient-148 font-noto-sans text-render-optimize antialiased">
+      <body className="bg-gradient-148 text-render-optimize antialiased">
         {children}
       </body>
     </html>

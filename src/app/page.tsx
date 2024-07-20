@@ -3,7 +3,7 @@ import TestimonialCard from '@/components/TestimonialCard'
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center items-center mt-[200px]">
+      <div className="flex justify-center items-start px-[17.5px] pt-[200px] h-screen md:min-h-[1024px] lg:min-h-[768px]">
         <TestimonialCard
           image={'/thumbnail.png'}
           name={'Sarah Dole'}
