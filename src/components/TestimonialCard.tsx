@@ -26,10 +26,12 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
         </div>
         <div className="flex flex-col">
           <div className="font-semibold text-lg text-neutral-900">{name}</div>
-          <div className="text-sm">{username}</div>
+          <div className="font-normal text-sm">{username}</div>
         </div>
       </div>
-      <div className="mt-4 text-base">{testimonial}</div>
+      <div className="font-normal text-base text-ellipsis text-neutral-600 overflow-hidden">
+        {testimonial}
+      </div>
     </div>
   )
 }
