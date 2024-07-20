@@ -18,7 +18,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
 }: TestimonialProps): JSX.Element => {
   return (
     <div
-      className={`${notoSans.className} bg-white shadow-sm p-6 rounded-lg w-[340px] h-[233px] text-neutral-600`}
+      className={`${notoSans.className} bg-white p-6 rounded-lg w-[340px] h-[233px] text-neutral-600 flex flex-col gap-4 outline-1 outline-neutral-200 shadow-soft`}
     >
       <div className="flex flex-row gap-4">
         <div>
