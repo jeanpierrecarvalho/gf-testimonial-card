@@ -29,7 +29,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
           <div className="font-normal text-sm">{username}</div>
         </div>
       </div>
-      <div className="mt-4 text-base text-ellipsis overflow-hidden">
+      <div className="text-base text-ellipsis overflow-hidden">
         {testimonial}
       </div>
     </div>
