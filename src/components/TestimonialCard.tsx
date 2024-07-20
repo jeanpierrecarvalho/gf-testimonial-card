@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import { Noto_Sans } from 'next/font/google'
+
+const notoSans = Noto_Sans({ subsets: ['latin'] })
 
 type TestimonialProps = {
   image: string
@@ -14,8 +17,10 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
   testimonial,
 }: TestimonialProps): JSX.Element => {
   return (
-    <div className="border-2 border-neutral-200 bg-white shadow-md p-6 rounded-lg w-[340px] h-[233px] text-neutral-600">
-      <div className="flex flex-row gap-2">
+    <div
+      className={`${notoSans.className} border-2 border-neutral-200 bg-white shadow-md p-6 rounded-lg w-[340px] h-[233px] text-neutral-600`}
+    >
+      <div className="flex flex-row gap-4">
         <div>
           <Image src={image} width={48} height={48} alt="Profile Thumbnail" />
         </div>
